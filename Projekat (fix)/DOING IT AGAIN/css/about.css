@@ -1,0 +1,79 @@
+/*-----------------------------------
+				GLOBAL
+-------------------------------------
+*/
+
+
+.h1class{
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 35px;
+	letter-spacing: 0.3em;
+	color: #333333;
+	font-weight: 700;
+}
+
+.h2class{
+	font-size: 18px;
+	font-family: Roboto;
+	color: #888888;
+	letter-spacing: 0.04em;
+	text-align: center;
+	margin-bottom: 86px;
+}
+
+.container{
+	width: 1196px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+
+
+
+/*-----------------------------------
+				HEADER
+-------------------------------------
+*/
+header{
+	height: 110px;
+}
+
+header img{
+	float:left;
+	margin-top: 31px;
+}
+
+nav{
+	float: right;
+	font-family: Montserrat;
+	font-size: 12px;
+	letter-spacing: 0.03em;
+	display: block;
+	margin-top: 50px;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	float:left;
+	margin-right: 38px;
+}
+nav ul li:nth-child(8){
+	margin-right: 0px;
+}
+
+nav a{
+	color: #333333;
+	text-decoration: none;
+}
+nav a:visited{
+	color: #333333;
+}
+
+nav a:hover{
+	color: #2ea0ff;
+}
