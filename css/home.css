@@ -45,6 +45,12 @@ NAV HOVER blue #2ea0ff
 	width: 1196px;
 	margin: 0 auto;
 	overflow: hidden;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box;
+    padding-left:40px;
+    padding-right: 40px;
+
 }
 
 
@@ -227,7 +233,7 @@ nav a:hover{
 }
 
 #left_p{
-	margin-top: 92px;
+	margin-top:92px;
 	font-family: roboto;
 	font-size: 40px;
 	font-weight: 300;
@@ -241,6 +247,8 @@ nav a:hover{
 	font-weight: 400;
 	color: #888888;
 	font-size: 20px;
+	line-height: 64px;
+	display: block;
 }
 
 #left_p strong{
@@ -262,15 +270,14 @@ nav a:hover{
 	font-size: 22px;
 	font-family: Montserrat;
 	letter-spacing: 0.02em;
-	line-height: 14px;
+	line-height: 88px;
 	display: inline-block;
-	margin-top: 36px;
 	margin-right: 28px;
 	
 }
 
 #learn_more_dugme i{
-	margin-top: 36px;
+	
 	color: White;
 	font-size: 22px;
 }
@@ -549,8 +556,55 @@ footer{
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 1195px){
 	.container{
-		width: 768px;
+		box-sizing:border-box;
+    	-moz-box-sizing:border-box; /* Firefox */
+    	-webkit-box-sizing:border-box;
+		width: 100%;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
+
+
 }
+
+@media (max-width: 1107px){
+	#featured_works .container{
+		text-align: center;
+	}
+
+	#left_p{
+		display: block;
+		float: none;
+		margin-bottom: 0px;
+	}
+
+	#left_p span{
+		line-height: 30px;
+	}
+
+	#learn_more_dugme{
+		float: none;
+		display: inline-block;
+		margin-top: 30px;
+		width: 168px;
+		height: 58px;
+		background-color: #ffffff;
+		
+	}
+
+	#learn_more_dugme p{
+		color: #333333;
+		font-size: 15px;
+		margin-right: 8px;
+		line-height: 58px;
+	}
+
+	#learn_more_dugme i{
+		color: #333333;
+		font-size: 14px;
+	}
+
+}
+
