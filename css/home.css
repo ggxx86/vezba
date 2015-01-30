@@ -48,10 +48,6 @@ NAV HOVER blue #2ea0ff
 
 }
 
-
-
-
-
 /*-----------------------------------
 				HEADER
 -------------------------------------
@@ -104,10 +100,9 @@ nav a:hover{
 }
 
 
-/*-----------------------------------
-				OUR SERVICES
--------------------------------------
-*/
+/*/////////////////////////////////////
+			OUR SERVICES
+/////////////////////////////////////*/
 
 #our_services .container .h1class:first-child{
 	margin-top: 120px;
@@ -300,21 +295,14 @@ nav a:hover{
 }
 
 /*///////////////////////////////////
-////////////////////////////////////
-			
 			LATEST BLOG 
-
-/////////////////////////////////////
-///////////////////////////////////////
-*/
+/////////////////////////////////////*/
 
 /*
 #top_part{
 	background-color: #f5f6f8;
 	border: 1px solid #e5e8ea;
 	height: 503px;
-	
-
 }
 */
 /*
@@ -326,6 +314,11 @@ nav a:hover{
 	position: relative;
 }
 
+#latest_blog .container{
+	position: relative;
+	z-index: 2;
+}
+
 #siva_maska{
 	height: 516px;
 	width: 100%;
@@ -334,6 +327,7 @@ nav a:hover{
 	overflow: hidden;
 	top:0;
 	left: 0;
+	z-index: 1;
 }
 
 #latest_blog h1{
@@ -345,47 +339,59 @@ nav a:hover{
 	margin-bottom: 84px;
 }
 
+#blog li img{
+	max-width: 100%;
+}
+
 #blog li{
 	width:372px;
+	border-top: 1px solid #e5e8ea;
 	border-left: 1px solid #e5e8ea;
 	border-right: 1px solid #e5e8ea;
 	border-bottom: 3px solid #e5e8ea;
 	float: left;
 	margin-right: 37px;
+	margin-bottom: 45px;
+	
+}
 
+.li_part2{
+	width: 324px;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box;
+  	padding-left: 28px;
+    padding-right: 34px; 
 }
 
 #blog li:nth-child(3){
 	margin-right: 0px;
 }
 
+
+
 #blog h3{
 	font-family: Montserrat;
 	font-size: 30px;
 	line-height: 40px;
 	color: #333333;
-	display: inline-block;
+	display: block;
 	margin-top: 42px;
-	margin-left: 32px;
 	margin-bottom: 45px;
 	padding-bottom: 38px;
-	padding-right: 36px;
 	border-bottom: 1px dotted #999999;
 
 }
 
-#blog h3, .blog_text{
-	margin-left: 32px;
-}
-
 .blog_text{
-	width: 302px;
+	
 	font-size: 13px;
 	font-family: roboto;
 	line-height: 24px;
 	letter-spacing: 0.04em;
 	color:#888888;
 	margin-bottom: 58px;
+	display: block;
 
 }
 /*
@@ -400,15 +406,12 @@ nav a:hover{
 	float: left;
 	color: #c4c4c4;
 	font-size: 11px;
-	margin-left: 36px;
 	margin-bottom: 36px;
 	display: inline-block;
 }
 
 .blog_number{
 	float: right;
-
-	margin-right: 34px;
 	margin-left: 6px;
 	font-family: 'roboto';
 	font-size: 10px;
@@ -435,7 +438,7 @@ nav a:hover{
 
 /*////////////////////////////
 			FOOTER
-//////////////////////////////*/
+////////////////////////////////*/
 
 
 #last_section{
@@ -589,6 +592,15 @@ footer{
 }
 
 
+
+/*///////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+						
+
+								MEDIA QUERY
+
+----------------------------------------------------------------------------*/
+
 @media (max-width: 1195px){
 	.container{
 		box-sizing:border-box;
@@ -643,16 +655,15 @@ footer{
 		font-size: 14px;
 	}
 
-/****************************
-		OUR SERVICES
-*****************************/
-
-
-
-
 
 }
+/*------------------------------------------
+		MEDIA QUERY MAX WIDTH 768 END*/
 
+
+
+
+/*********************************************************************/
 
 @media (max-width: 768px){
 
@@ -670,7 +681,9 @@ footer{
 		height:385px;
 
 	}
-
+/******************************
+		OUR SERVICES
+*******************************/
 	#our_services ul li {
 	width: 50%;
 	}
@@ -683,6 +696,9 @@ footer{
 	#our_services p{
 		margin-bottom: 110px;
 	}
+/******************************
+			MAIN SLIDE SHOW
+*******************************/
 
 #main_slideshow img{
 	max-width: none;
@@ -712,10 +728,39 @@ footer{
 
 #blog li {
 	margin-right: 0px;
+	width: 322px;
+}
+
+#blog h3{
+	padding-right: 0px;
+	font-size: 25px;
+}
+
+#blog li:first-child{
+	margin-right: 40px;
+}
+
+#blog li:nth-child(3) .li_part2{
+	float: right;
+}
+
+#blog li:nth-child(3) img{
+	float: left;
+	width: 342px;
+	height: 375px;
+}
+
+#blog li:nth-child(3){
+	width: 686px;
+}
+
+#siva_maska{
+	height: 478px;
 }
 
 
 
-
-
 }
+
+/*------------------------------------------
+		MEDIA QUERY MAX WIDTH 768 END*/
